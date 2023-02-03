@@ -28,6 +28,7 @@ builder.Services.AddScoped<INeo4jDataAccess, Neo4jDataAccess>();
 
 // This is the registration for your domain repository class
 builder.Services.AddTransient<IPersonRepository, PersonRepository>();
+builder.Services.AddTransient<IQueryRepository, QueryRepository>();
 
 
 var app = builder.Build();
